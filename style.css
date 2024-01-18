@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* css for main container */
+#container{
+    border-radius: 20px;
+    margin-left: 520px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 350px;
+    color: black;
+    font-weight: bold;
+    box-shadow: 15px 15px 10px 0px rgb(138, 138, 206);
+    background-image: linear-gradient(to right, rgb(138, 138, 206) , rgb(212, 130, 212));
+    
+}
+
+/* css for clock */
+#clock {
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 70px;
+}
+/* css for alarm form */
+#alarmForm {
+    position: relative;
+    padding: 10px;
+    margin: 40px;
+    width: 250px;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#alarmForm input{
+    background-color: rgb(138, 138, 206);
+    width: 40px;
+}
+
+#hour, #minute, #second{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    padding: 2px;
+}
+
+#ampm{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: rgb(138, 138, 206);
+}
+
+#alarms{
+    position: relative;
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* css for btn */
+button{
+    background-image: linear-gradient(to right, rgb(138, 138, 206) , rgb(212, 130, 212));
+    border: 1px solid #0f1112;
+    font-size: medium;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 ;
+    margin: 7px;
+}
+
+button:hover{
+    box-shadow: 2px 0 2px;
+    background-color: #fff;
+}
+/* css for responsive  */
+@media screen and (max-width: 576px){
+    body{
+        font-family: Arial, sans-serif;
+        font-weight: 10px;
+    }
+
+    #container{
+        border: 5px double black;
+        border-radius: 20px;
+        background-image: linear-gradient(to right, rgb(138, 138, 206) , rgb(212, 130, 212));
+    }
+    #clock{
+        position: relative;
+        font-size: 3em;
+        margin: 50px auto;
+    }
+
+    #alarmForm{
+        position: relative;
+        border: none;
+        display: block;
+        margin: 50px auto;
+        width: 250px;
+        /* text-decoration: none; */
+        
+    }
+
+    #hour, #minute, #second{
+        border: 1px solid black;
+        background-color: rgb(138, 138, 206);
+        border-radius: 5px;
+        margin:0;
+        padding: 3px;
+        width: 20px;
+    }
+
+    #ampm{
+        border: 1px solid black;
+        background-color:rgb(212, 130, 212);
+        border-radius: 5px;
+        padding: 3px;
+        margin-left: 20px;
+    }
+
+    #alarms{
+        position: relative;
+        display: block;
+        margin: 30px auto;
+        text-align: center;
+        box-shadow: 5px 5px 5px 5px;
+        border-radius: 10px;
+        width: 250px;
+    }
+
+    button{
+        margin: 15px;
+    }
+    
+}
